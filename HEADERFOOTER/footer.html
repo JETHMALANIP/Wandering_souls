@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/bootstrapjquery/bootstrap.min.css" rel="stylesheet">
+  <script src="/bootstrapjquery/bootstrap.bundle.min.js"></script>
+  <script src="/bootstrapjquery/bootstrap.min.js"></script>
+
+  <script src="/bootstrapjquery/jquery-3.7.0.min.js"></script>
+  <script src="/js/mail.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+</head>
+<style>
+  * {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .footer {
+    margin-top: 150px;
+    box-shadow: 20px 7px 20px black;
+  }
+
+  .footer img {
+    height: 80px;
+    border-radius: 60px;
+
+  }
+
+  li {
+    list-style: none;
+    font-size: 1.2rem;
+  }
+
+  li a {
+    text-decoration: none;
+    color: white;
+
+  }
+
+  li a:hover {
+    padding: 10px;
+  }
+</style>
+<script>
+  var mail = document.feedback.fEmail.value;
+  function feedbackvali() {
+    if (document.feedback.fName.value == "") {
+      alert("Name required");
+      document.feedback.fName.focus();
+      return false;
+    }
+    mail = document.feedback.fEmail.value;
+    if (mail == "") {
+      alert("Email required");
+      document.feedback.fEmail.focus();
+      return false;
+    }
+    if (document.feedback.fFeedback.value == "") {
+      alert("Feedback required");
+      document.feedback.fFeedback.focus();
+      return false;
+    }
+    alert("Thanks for the Feedback!!")
+    return true;
+
+
+  }
+
+
+
+
+</script>
+
+<body>
+  <div class="d-flex flex-wrap-reverse flex-sm-shrink-1 footer">
+
+    <div class="flex-item flex-fill p-5 text-bg-dark">
+      <h4 class="m-5">Navigate to</h4>
+      <ul class="m-3">
+        <li><a href="home.html">HOME</a></li>
+
+        <li><a href="standup.html">STAND-UP</a></li>
+        <li><a href="theatre.html">THEATRE</a></li>
+
+        <li><a href="foodfest.html">FOOD FESTIVAL</a></li>
+        <li><a href="concert.html">CONCERTS</a></li>
+        <li><a href="treks.html">TRECKS</a></li>
+        <li><a href="fun.html">FUN</a></li>
+        <li><a href="amusepark.html">AMUSEMENT PARK</a></li>
+        <li><a href="shopping.html">SHOPPING</a></li>
+        <li><a href="hotels.html">HOTELS</a></li>
+
+      </ul>
+    </div>
+
+    <div class="flex-item flex-fill p-5 text-bg-dark">
+      <h4 class="m-5">Follow us on</h4>
+      <div class="m-5">
+
+        <img src="/photos/instagram.jpg" alt="" style="height: 40px; border-radius: 60px; margin-right: 3px;">
+        <img src="/photos/facebook.jpg" alt="" style="height: 40px; border-radius: 60px; margin-right: 3px;">
+        <img src="/photos/linkedin.jpg" alt="" style="height: 40px; border-radius: 60px; margin-right: 3px;">
+        <img src="/photos/twitter.jpg" alt="" style="height: 40px; border-radius: 60px;">
+      </div>
+
+    </div>
+
+    <div class="flex-item flex-fill p-5 text-bg-dark">
+      <h4 class="mt-5">Your opinion matters </h4>
+
+
+      <form action="/foot" method="post" name="feedback" class="bg-dark m-3" onsubmit="return(feedbackvali())">
+        <div class="mb-3 mt-3">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter Name" name="fName">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter Email" name="fEmail">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="feedback" class="form-label">Feedback:</label>
+          <textarea class="form-control" rows="5" id="feedback" name="fFeedback"
+            placeholder="Enter Feedback"></textarea>
+        </div>
+        <button type="submit" class="btn btn-secondary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
