@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/bootstrapjquery/bootstrap.min.css" rel="stylesheet">
+    <script src="/bootstrapjquery/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrapjquery/bootstrap.min.js"></script>
+
+    <script src="/bootstrapjquery/jquery-3.7.0.min.js"></script>
+    
+
+    <script>
+       $(function()
+        {
+            $("#header").load("HEADERFOOTER/header.html");
+            $("#footer").load("HEADERFOOTER/footer.html");
+
+        });
+    </script>
+    <script src="js/wishjs.js"></script>
+        <title>Food Fest</title>
+
+    <link rel="stylesheet" href="css/shows.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    
+    <h3>Upcoming Foodfest!!</h3>
+    <div class="container bg-secondary d-flex flex-wrap">
+        
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event0">
+            <img class="card-img-top" src="photos/majjanilife.png" style="height: 200px; width: 100%;" alt="Card image" >
+            <div class="card-body">
+                <h4 class="card-title">Majja Ni Life</h4>
+                <p class="card-text">
+                    Location: Andheri East, Mumbai <br>
+                    Date: 13Aug <br>
+                    Time: 2:00 pm <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#majjanilife">View Details</button>
+                <div class="modal" id="majjanilife">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Majja Ni Life</h3>
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam fuga placeat delectus quasi alias cum praesentium et quos id ad sit adipisci iusto ducimus hic voluptate, in, laborum, veritatis repellendus odit repudiandae quam rerum! Laboriosam amet suscipit quisquam animi, asperiores fugiat explicabo tempore facilis voluptatibus expedita qui quo dolorum alias. Animi nam facere, non asperiores ipsum esse rem vero recusandae voluptatem iste enim beatae quo nostrum quam dolor tempora. Vel dolor possimus assumenda corporis quae quos recusandae, consectetur laboriosam cumque quaerat perspiciatis similique ab eligendi, quia natus facilis? Quasi accusantium quibusdam fuga earum facilis. Vel ad veniam deleniti laudantium tenetur.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="0">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event1">
+            <img class="card-img-top" src="photos/burrpfest.jpg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Burrp Fest</h4>
+                <p class="card-text">
+                    Location: Cuffe Parade,Mumbai
+                    <br>
+                    Date: 25 Aug <br>
+                    Time: 1:00 pm <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#burrpfest">View Details</button>
+                <div class="modal" id="burrpfest">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Burrp Fest</h3>
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam fuga placeat delectus quasi alias cum praesentium et quos id ad sit adipisci iusto ducimus hic voluptate, in, laborum, veritatis repellendus odit repudiandae quam rerum! Laboriosam amet suscipit quisquam animi, asperiores fugiat explicabo tempore facilis voluptatibus expedita qui quo dolorum alias. Animi nam facere, non asperiores ipsum esse rem vero recusandae voluptatem iste enim beatae quo nostrum quam dolor tempora. Vel dolor possimus assumenda corporis quae quos recusandae, consectetur laboriosam cumque quaerat perspiciatis similique ab eligendi, quia natus facilis? Quasi accusantium quibusdam fuga earum facilis. Vel ad veniam deleniti laudantium tenetur.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="1">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event2">
+            <img class="card-img-top" src="photos/delhigrub.jpg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Delhi's Grub Fest</h4>
+                <p class="card-text">
+                    Location: Pragati Maidan, New Delhi <br>
+                    Date: 1 Aug <br>
+                    Time: 12:00 pm <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#delhigrub">View Details</button>
+                <div class="modal" id="delhigrub">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Delhi's Grub Fest</h3>
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam fuga placeat delectus quasi alias cum praesentium et quos id ad sit adipisci iusto ducimus hic voluptate, in, laborum, veritatis repellendus odit repudiandae quam rerum! Laboriosam amet suscipit quisquam animi, asperiores fugiat explicabo tempore facilis voluptatibus expedita qui quo dolorum alias. Animi nam facere, non asperiores ipsum esse rem vero recusandae voluptatem iste enim beatae quo nostrum quam dolor tempora. Vel dolor possimus assumenda corporis quae quos recusandae, consectetur laboriosam cumque quaerat perspiciatis similique ab eligendi, quia natus facilis? Quasi accusantium quibusdam fuga earum facilis. Vel ad veniam deleniti laudantium tenetur.
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button class="but text-right btn btn-secondary" id="2">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event3">
+            <img class="card-img-top" src="photos/indianfoodexpo.png" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Indian Food Expo</h4>
+                <p class="card-text">
+                    Location: Pragati Vihar, New Delhi <br>
+                    Date: 22 Aug <br>
+                    Time: 11:00 am <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#indianfoodexpo">View Details</button>
+                <div class="modal" id="indianfoodexpo">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Indian Food Expo</h3>
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam fuga placeat delectus quasi alias cum praesentium et quos id ad sit adipisci iusto ducimus hic voluptate, in, laborum, veritatis repellendus odit repudiandae quam rerum! Laboriosam amet suscipit quisquam animi, asperiores fugiat explicabo tempore facilis voluptatibus expedita qui quo dolorum alias. Animi nam facere, non asperiores ipsum esse rem vero recusandae voluptatem iste enim beatae quo nostrum quam dolor tempora. Vel dolor possimus assumenda corporis quae quos recusandae, consectetur laboriosam cumque quaerat perspiciatis similique ab eligendi, quia natus facilis? Quasi accusantium quibusdam fuga earum facilis. Vel ad veniam deleniti laudantium tenetur.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="3">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event4">
+            <img class="card-img-top" src="photos/streetmeetup.jpg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Street Meetup</h4>
+                <p class="card-text">
+                    Location: Labhganga Exhibition Center, Indore<br>
+                    Date: 4 Aug <br>
+                    Time: 1:00 pm <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#streetmeetup">View Details</button>
+                <div class="modal" id="streetmeetup">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Street Meetup</h3>
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam fuga placeat delectus quasi alias cum praesentium et quos id ad sit adipisci iusto ducimus hic voluptate, in, laborum, veritatis repellendus odit repudiandae quam rerum! Laboriosam amet suscipit quisquam animi, asperiores fugiat explicabo tempore facilis voluptatibus expedita qui quo dolorum alias. Animi nam facere, non asperiores ipsum esse rem vero recusandae voluptatem iste enim beatae quo nostrum quam dolor tempora. Vel dolor possimus assumenda corporis quae quos recusandae, consectetur laboriosam cumque quaerat perspiciatis similique ab eligendi, quia natus facilis? Quasi accusantium quibusdam fuga earum facilis. Vel ad veniam deleniti laudantium tenetur.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="4">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event5">
+            <img class="card-img-top" src="photos/momofest.jpg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Momo Festival</h4>
+                <p class="card-text">
+                    Location: Ambedkar Nagar, Indore <br>
+                    Date: 29 July <br>
+                    Time: 10:00 am <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#momofest">View Details</button>
+                <div class="modal" id="momofest">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Momo Festival</h3>
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam fuga placeat delectus quasi alias cum praesentium et quos id ad sit adipisci iusto ducimus hic voluptate, in, laborum, veritatis repellendus odit repudiandae quam rerum! Laboriosam amet suscipit quisquam animi, asperiores fugiat explicabo tempore facilis voluptatibus expedita qui quo dolorum alias. Animi nam facere, non asperiores ipsum esse rem vero recusandae voluptatem iste enim beatae quo nostrum quam dolor tempora. Vel dolor possimus assumenda corporis quae quos recusandae, consectetur laboriosam cumque quaerat perspiciatis similique ab eligendi, quia natus facilis? Quasi accusantium quibusdam fuga earum facilis. Vel ad veniam deleniti laudantium tenetur.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="5">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event6">
+            <img class="card-img-top" src="photos/darksenses.avif" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Dark Senses</h4>
+                <p class="card-text">
+                    Location: Noida, Lucknow <br>
+                    Date: 17 Aug <br>
+                    Time: 12:30 pm <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#darksenses">View Details</button>
+                <div class="modal" id="darksenses">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Dark Senses</h3>
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam fuga placeat delectus quasi alias cum praesentium et quos id ad sit adipisci iusto ducimus hic voluptate, in, laborum, veritatis repellendus odit repudiandae quam rerum! Laboriosam amet suscipit quisquam animi, asperiores fugiat explicabo tempore facilis voluptatibus expedita qui quo dolorum alias. Animi nam facere, non asperiores ipsum esse rem vero recusandae voluptatem iste enim beatae quo nostrum quam dolor tempora. Vel dolor possimus assumenda corporis quae quos recusandae, consectetur laboriosam cumque quaerat perspiciatis similique ab eligendi, quia natus facilis? Quasi accusantium quibusdam fuga earum facilis. Vel ad veniam deleniti laudantium tenetur.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="6">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event7">
+            <img class="card-img-top" src="photos/worlddhaba.jpg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">World Dhaba</h4>
+                <p class="card-text">
+                    Location: Gomti Nagar, Lucknow <br>
+                    Date: 2 Aug <br>
+                    Time: 6:00 pm <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#worlddhaba">View Details</button>
+                <div class="modal" id="worlddhaba">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">World Dhaba</h3>
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam fuga placeat delectus quasi alias cum praesentium et quos id ad sit adipisci iusto ducimus hic voluptate, in, laborum, veritatis repellendus odit repudiandae quam rerum! Laboriosam amet suscipit quisquam animi, asperiores fugiat explicabo tempore facilis voluptatibus expedita qui quo dolorum alias. Animi nam facere, non asperiores ipsum esse rem vero recusandae voluptatem iste enim beatae quo nostrum quam dolor tempora. Vel dolor possimus assumenda corporis quae quos recusandae, consectetur laboriosam cumque quaerat perspiciatis similique ab eligendi, quia natus facilis? Quasi accusantium quibusdam fuga earum facilis. Vel ad veniam deleniti laudantium tenetur.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="7">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event8">
+            <img class="card-img-top" src="photos/goanfoodfest.jpg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Goan Food Fest</h4>
+                <p class="card-text">
+                    Location: Kerala Cafe, Pune <br>
+                    Date: 27 July <br>
+                    Time: 5:00 pm <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#goanfoodfest">View Details</button>
+                <div class="modal" id="goanfoodfest">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Goan Food Fest</h3>
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam fuga placeat delectus quasi alias cum praesentium et quos id ad sit adipisci iusto ducimus hic voluptate, in, laborum, veritatis repellendus odit repudiandae quam rerum! Laboriosam amet suscipit quisquam animi, asperiores fugiat explicabo tempore facilis voluptatibus expedita qui quo dolorum alias. Animi nam facere, non asperiores ipsum esse rem vero recusandae voluptatem iste enim beatae quo nostrum quam dolor tempora. Vel dolor possimus assumenda corporis quae quos recusandae, consectetur laboriosam cumque quaerat perspiciatis similique ab eligendi, quia natus facilis? Quasi accusantium quibusdam fuga earum facilis. Vel ad veniam deleniti laudantium tenetur.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="8">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event9">
+            <img class="card-img-top" src="photos/keralafoodfest.jpg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Streets of Kolkata</h4>
+                <p class="card-text">
+                    Location: Koregaon Park, Pune<br>
+                    Date: 12 Aug <br>
+                    Time: 1:00 pm <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#streetsofkolkata">View Details</button>
+                <div class="modal" id="streetsofkolkata">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Streets of Kolkata</h3>
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam fuga placeat delectus quasi alias cum praesentium et quos id ad sit adipisci iusto ducimus hic voluptate, in, laborum, veritatis repellendus odit repudiandae quam rerum! Laboriosam amet suscipit quisquam animi, asperiores fugiat explicabo tempore facilis voluptatibus expedita qui quo dolorum alias. Animi nam facere, non asperiores ipsum esse rem vero recusandae voluptatem iste enim beatae quo nostrum quam dolor tempora. Vel dolor possimus assumenda corporis quae quos recusandae, consectetur laboriosam cumque quaerat perspiciatis similique ab eligendi, quia natus facilis? Quasi accusantium quibusdam fuga earum facilis. Vel ad veniam deleniti laudantium tenetur.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="9">🤍</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- footer -->
+    <div id="footer"></div>
+    
+</body>
+
+</html>

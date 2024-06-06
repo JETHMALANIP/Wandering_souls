@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/bootstrapjquery/bootstrap.min.css" rel="stylesheet">
+    <script src="/bootstrapjquery/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrapjquery/bootstrap.min.js"></script>
+
+    <script src="bootstrapjquery/jquery-3.7.0.min.js"></script>
+
+
+    <script>
+       $(function()
+        {
+            $("#header").load("HEADERFOOTER/header.html");
+            $("#footer").load("HEADERFOOTER/footer.html");
+
+        });
+        function book() {
+            if (document.booking.seats.value == 1) {
+                const price = document.getElementById("pay")
+                price.innerHTML = "Pay " + 300 * 1;
+            }
+            if (document.booking.seats.value == 2) {
+                const price = document.getElementById("pay")
+                price.innerHTML = "Pay " + 300 * 2;
+            }
+            if (document.booking.seats.value == 3) {
+                const price = document.getElementById("pay")
+                price.innerHTML = "Pay " + 300 * 3;
+            }
+            if (document.booking.seats.value == 4) {
+                const price = document.getElementById("pay")
+                price.innerHTML = "Pay " + 300 * 4;
+            }
+        }
+
+    </script>
+    <script src="js/wishjs.js"></script>
+    
+    <title>Stand-up</title>
+
+    <link rel="stylesheet" href="/css/shows.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <!-- shows -->
+    <h3>Upcoming Stand-up Shows!!</h3>
+    <div class="container bg-secondary d-flex flex-wrap">
+
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event0">
+            <img class="card-img-top" src="photos/zakirkhan.avif" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Zakir Khan</h4>
+                <p class="card-text">
+                    Location:Anand Mohan Mathur Auditorium Vijay Nagar, Indore<br>
+                    Date: 29July <br>
+                    Time: 7:30 pm <br>
+                    Price: 300/- <br>
+
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#zakir">Book Now</button>
+                <div class="modal" id="zakir">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form name="booking" onchange="return(book())">
+                                    <label for="tickets">Select No. of Seats:</label>
+                                    <input type="radio" name="seats" value="1" checked>
+                                    <label for="one">1</label> &nbsp;&nbsp;
+                                    <input type="radio" name="seats" value="2">
+                                    <label for="two">2</label> &nbsp;&nbsp;
+                                    <input type="radio" name="seats" value="3">
+                                    <label for="three">3</label> &nbsp;&nbsp;
+                                    <input type="radio" name="seats" value="4">
+                                    <label for="four">4</label><br><br>
+                                </form>
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn pay" id="pay">Pay 300/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="0">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event1">
+            <img class="card-img-top" src="photos/harsh.avif" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Harsh Gujaral</h4>
+                <p class="card-text">
+                    Location:Babasaheb Bhim Rao Ambedkar University, Lucknow
+                    <br>
+                    Date: 7Aug <br>
+                    Time: 8:00 pm <br>
+                    Price: 400/- <br>
+
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#art">Book Now</button>
+                <div class="modal" id="art">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="1">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event2">
+            <img class="card-img-top" src="photos/akash.jpg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Akash Gupta</h4>
+                <p class="card-text">
+                    Location: August Kranti Marg, Siri Institutional Area, Siri Fort Institutional Area, Siri Fort, New
+                    Delhi,Delhi<br>
+                    Date: 22 Aug <br>
+                    Time:4:00 pm <br>
+                    Price: 400/-<br>
+
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#akash">Book Now</button>
+                <div class="modal" id="akash">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="2">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event3">
+            <img class="card-img-top" src="photos/munawar.avif" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Munawar Faruqi</h4>
+                <p class="card-text">
+                    Location: New Link Rd, Phase D, Oshiwara, Andheri West,Mumbai <br>
+                    Date: 20 Aug <br>
+                    Time: 8:00 pm <br>
+                    Price:450/-<br>
+
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#munawar">Book Now</button>
+                <div class="modal" id="munawar">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="3">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event4">
+            <img class="card-img-top" src="photos/anubhav.avif" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Anubhav Singh Bassi</h4>
+                <p class="card-text">
+                    Location:Second floor, J.P.Complex, Kursi Rd, near Gudamba Thana, Lucknow<br>
+                    Date: 6 Aug <br>
+                    Time: 5:00 pm <br>
+                    Price: 350/-<br>
+
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#anubhav">Book Now</button>
+                <div class="modal" id="anubhav">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="4">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event5">
+            <img class="card-img-top" src="photos/abhishek.avif" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Abhishek Upmanyu</h4>
+                <p class="card-text">
+                    Location:Santushti Shopping Complex Shop No-10 Opp Samrat Hotel, New Delhi, Delhi <br>
+                    Date: 26 Aug <br>
+                    Time: 6:00 pm <br>
+                    Price: 500/-<br>
+
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#abhishek">Book Now</button>
+                <div class="modal" id="abhishek">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="5">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event6">
+            <img class="card-img-top" src="photos/samay.jpeg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Samay Raina</h4>
+                <p class="card-text">
+                    Location: 1st Floor, Hotel Unicontinental, 3rd Road, Station, next to Khar, Khar West,Mumbai <br>
+                    Date: 27 Aug <br>
+                    Time: 7:00 pm <br>
+                    Price: 700/-<br>
+
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#samay">Book Now</button>
+                <div class="modal" id="samay">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="6">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event7">
+            <img class="card-img-top" src="photos/manhar.webp" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Manhar Seth</h4>
+                <p class="card-text">
+                    Location: Cafe Palette, 136, Saket Nagar, 3 Indore <br>
+                    Date: 29 Aug <br>
+                    Time: 4:00 pm <br>
+                    Price: 650/-<br>
+
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#manhar">Book Now</button>
+                <div class="modal" id="manhar">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="7">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event8">
+            <img class="card-img-top" src="photos/yash.jpg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Yash Rathi</h4>
+                <p class="card-text">
+                    Location:Jyoti Heritage Apartment Behind Sai Sagar Restaurant, Vitthal Rao Shivarkar Rd,
+                    opposite Handicap School, Wanowrie, Pune<br>
+                    Date: 16 Aug <br>
+                    Time: 4:00 pm <br>
+                    Price: 700/- <br>
+
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#yash">Book Now</button>
+                <div class="modal" id="yash">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="8">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event8">
+            <img class="card-img-top" src="photos/gaurav.jpg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Gaurav Gupta</h4>
+                <p class="card-text">
+                    Location: 4th Floor Baffin Bay Restaurant, opp. KAPIL MALHAR, Society, Baner,Pune<br>
+                    Date: 16 Aug <br>
+                    Time: 3:00 pm <br>
+                    Price: 500/- <br>
+
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#gaurav">Book Now</button>
+                <div class="modal" id="gaurav">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="8">🤍</button>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer"></div>
+</body>
+
+</html>

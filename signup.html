@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="/bootstrapjquery/bootstrap.min.css" rel="stylesheet">
+    <script src="/bootstrapjquery/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrapjquery/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    
+    <script>
+        function signup(){
+            if(document.sign_up.sEmail.value == ""){
+                alert("Enter Email ID");
+                document.sign_up.sEmail.focus;
+                return false;
+            }
+            
+            if(document.sign_up.Confirm.value ==""){
+                alert("Password required");
+                document.sign_up.Confirm.focus;
+                return false;
+            }
+
+            alert("Sign up successful!!");
+            window.location.replace("home.html");
+            return false;
+        }
+    </script>
+
+</head>
+<body>
+    <h1 class="text-center name" style="font-family: 'Monoton', cursive;">
+
+        Wandering Souls
+    </h1>
+    <div class="container bg-secondary" style="width: 400px; height: 100%; margin-top: 8rem ; border-radius: 20px; box-shadow: 10px 20px 20px black;">
+        <h1 class="text-center pt-3">Sign Up</h1>
+        <form name="sign_up" class=" m-3"  action="/signup" method="post">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="sEmail">
+            </div>
+            
+            
+              <div class="mb-3 mt-3">
+                <label for="pwd" class="form-label">Create Password:</label>
+                <input type="password" class="form-control" id="pass" name="Confirm">
+              </div>
+            <p class="text-center">Already have an account?<a href="index.html">Login</a></p>
+            <button type="submit" class="btn btn-dark mb-5 mt-3">Submit</button>
+          </form>
+
+    </div>
+    
+</body>
+</html>

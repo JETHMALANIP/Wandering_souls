@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/bootstrapjquery/bootstrap.min.css" rel="stylesheet">
+    <script src="/bootstrapjquery/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrapjquery/bootstrap.min.js"></script>
+
+    <script src="bootstrapjquery/jquery-3.7.0.min.js"></script>
+    
+
+    <script>
+       $(function()
+        {
+            $("#header").load("HEADERFOOTER/header.html");
+            $("#footer").load("HEADERFOOTER/footer.html");
+
+        });
+        function book() {
+            if (document.booking.seats.value == 1) {
+                const price = document.getElementById("pay")
+                price.innerHTML = "Pay " + 400 * 1;
+            }
+            if (document.booking.seats.value == 2) {
+                const price = document.getElementById("pay")
+                price.innerHTML = "Pay " + 400 * 2;
+            }
+            if (document.booking.seats.value == 3) {
+                const price = document.getElementById("pay")
+                price.innerHTML = "Pay " + 400 * 3;
+            }
+            if (document.booking.seats.value == 4) {
+                const price = document.getElementById("pay")
+                price.innerHTML = "Pay " + 400 * 4;
+            }
+        }
+    </script>
+    <script src="js/wishjs.js"></script>
+        <title>Theatre</title>
+
+    <link rel="stylesheet" href="/css/shows.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <!-- shows -->
+    <h3>Upcoming Theatre Shows!!</h3>
+    <div class="container bg-secondary d-flex flex-wrap">
+        
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event0">
+            <img class="card-img-top" src="photos/premutsav.avif" style="height: 200px; width: 100%;" alt="Card image" >
+            <div class="card-body">
+                <h4 class="card-title">Prem Utsav</h4>
+                <p class="card-text">
+                    Location: 393, Bhaudaji Rd, Brhmanwada, Matunga East, Mumbai<br>
+                    Date: 3Aug <br>
+                    Time: 8:30 pm <br>
+                    Price: 400/- <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#premutsav">Book Now</button>
+                <div class="modal" id="premutsav">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form name="booking" onchange="return(book())">
+                                    <label for="tickets">Select No. of Seats:</label>
+                                    <input type="radio" name="seats" value="1" checked>
+                                    <label for="one">1</label> &nbsp;&nbsp;
+                                    <input type="radio" name="seats" value="2">
+                                    <label for="two">2</label> &nbsp;&nbsp;
+                                    <input type="radio" name="seats" value="3">
+                                    <label for="three">3</label> &nbsp;&nbsp;
+                                    <input type="radio" name="seats" value="4">
+                                    <label for="four">4</label><br><br>
+                                </form>
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn pay" id="pay">Pay 400/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="0">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event1">
+            <img class="card-img-top" src="photos/art.jpg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Art (A comedy play)</h4>
+                <p class="card-text">
+                    Location: 191, Aram Nagar Part 2, Machlimar, Versova, Andheri West, Mumbai
+                    <br>
+                    Date: 24 July <br>
+                    Time: 1:30 pm <br>
+                    Price: 250/- <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#art">Book Now</button>
+                <div class="modal" id="art">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="1">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event2">
+            <img class="card-img-top" src="photos/the-dark-room.jpg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">The Dark Room 3.0</h4>
+                <p class="card-text">
+                    Location: 730, 7th &amp; 8th Floor Marvel Vista Lulla Nagar Pune <br>
+                    Date: 22 Aug <br>
+                    Time:12:00 pm <br>
+                    Price: 200/- <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#tdr">Book Now</button>
+                <div class="modal" id="tdr">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="2">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event3">
+            <img class="card-img-top" src="photos/shakespeare.jpg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Shakespeare Twelfth Night</h4>
+                <p class="card-text">
+                    Location: Clover Park, Viman Nagar, Pune <br>
+                    Date: 20 Aug <br>
+                    Time: 10:30 pm <br>
+                    Price: 350/- <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#12night">Book Now</button>
+                <div class="modal" id="12night">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="3">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event4">
+            <img class="card-img-top" src="photos/taxfree.avif" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Tax Free</h4>
+                <p class="card-text">
+                    Location: 2nd Floor, Little Theatre Group (LTG) Auditorium, 1, Copernicus Marg, Opposite
+                    Doordarshan Bhawan, Mandi House, New Delhi, Delhi<br>
+                    Date: 6 Aug <br>
+                    Time: 12:00 pm <br>
+                    Price: 300/- <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#taxfree">Book Now</button>
+                <div class="modal" id="taxfree">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="4">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event5">
+            <img class="card-img-top" src="photos/bichu.webp" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Bichhu</h4>
+                <p class="card-text">
+                    Location: Safdar Hashmi Marg, Todermal Road Area, Mandi House, New Delhi, Delhi <br>
+                    Date: 26 Aug <br>
+                    Time: 9:00 pm <br>
+                    Price: 350/- <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#bichhu">Book Now</button>
+                <div class="modal" id="bichhu">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="5">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event6">
+            <img class="card-img-top" src="photos/kharasang.avif" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Khara Khara Sang</h4>
+                <p class="card-text">
+                    Location: BALGANDHARV RANGAMANDIR, Shivajinagar, Pune <br>
+                    Date: 27 Aug <br>
+                    Time: 7:00 pm <br>
+                    Price: 250/-  <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#khara">Book Now</button>
+                <div class="modal" id="khara">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="6">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event7">
+            <img class="card-img-top" src="photos/ragdarbari.jpg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Dastan E Rag Darbari</h4>
+                <p class="card-text">
+                    Location: Juhu Church road ,janki kutir , Juhu, Mumbai <br>
+                    Date: 29 Aug <br>
+                    Time: 12:00 pm <br>
+                    Price: 300/-<br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#rag">Book Now</button>
+                <div class="modal" id="rag">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="7">🤍</button>
+            </div>
+        </div>
+        <div class="flex-item flex-fill card bg-dark m-5" style="width: 300px;" id="event8">
+            <img class="card-img-top" src="photos/kahanikirdar.jpg" style="height: 200px; width: 100%;" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">KAhani aur Kirdaar</h4>
+                <p class="card-text">
+                    Location: 58, Behind C21 Mall, Scheme 54 PU4, Indore<br>
+                    Date: 16 Aug <br>
+                    Time: 4:00 pm <br>
+                    Price: 300/- <br>
+                    
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#kak">Book Now</button>
+                <div class="modal" id="kak">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                Do you want to Book Now?
+                                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <button class="btn btn-secondary">
+
+                                    <a href="paymentgateway.html" class="btn">Pay 4000/-</a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="but text-right btn btn-secondary" id="8">🤍</button>
+            </div>
+        </div>
+        
+    </div>
+    <!-- footer -->
+    <div id="footer"></div>
+</body>
+
+</html>

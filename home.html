@@ -1,0 +1,324 @@
+<!DOCTYPE html">
+<html lang="en" data-bs-theme="dark" ng-app="countdownApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrapjquery/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrapjquery/bootstrap.bundle.min.js"></script>
+    <script src="bootstrapjquery/bootstrap.min.js"></script>
+    <script src="bootstrapjquery/angular.min.js"></script>
+    <script src="bootstrapjquery/jquery-3.7.0.min.js"></script>
+
+
+
+    <script>
+        $(function () {
+            $("#header").load("HEADERFOOTER/header.html");
+            $("#footer").load("HEADERFOOTER/footer.html");
+
+
+        });
+
+
+
+
+    </script>
+    <style>
+        .container {
+            margin-top: 120px;
+        }
+
+        .carousel img {
+            height: 600px;
+        }
+
+        .bs {
+            border-radius: 15px;
+            box-shadow: 20px 10px 20px black;
+
+
+        }
+
+        .item {
+            justify-content: center;
+            height: 250px;
+            width: 350px;
+            margin: 5px;
+            border-radius: 10px;
+            box-shadow: 20px 10px 20px black;
+        }
+
+        .item img:hover {
+            height: 150px;
+            width: 230px;
+        }
+
+        .item p {
+            height: 2px;
+            padding-top: 10px;
+            font-size: 15px;
+        }
+
+        .flex-img {
+            height: 140px;
+            width: 220px;
+
+
+        }
+
+        .categories {
+            margin: 10px;
+        }
+
+        .carousel-caption {
+
+            width: 70%;
+            background-color: rgb(90, 90, 90);
+            opacity: 74%;
+        }
+    </style>
+
+
+
+    <title>Wandering Souls</title>
+
+
+</head>
+
+<body ng-app="countdownApp">
+
+
+    <div id="header"></div>
+    <!-- scrolling carousal-->
+    <div>
+        <div id="slider" class="carousel slide carousel-sm" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="photos/zakirkhan.avif" alt="Zakir Khan" class="d-block w-100">
+                    <div class="carousel-caption caption">
+                        <h4>Zakir Khan Live</h4>
+                        <p><a href="standup.html">Book Tickets</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/nehakakkar.jpg" alt="Neha Kakkar" class="d-block w-100">
+                    <div class="carousel-caption caption">
+                        <h4>Neha Kakkar Live</h4>
+                        <p><a href="concert.html">Book Tickets</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/delhigrub.jpg" alt="Grub Fest" class="d-block w-100">
+                    <div class="carousel-caption caption">
+                        <h4>Grub Fest, Delhi</h4>
+                        <p><a href="foodfest.html">Know Details</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/the-dark-room.jpg" alt="The Dark Room 3.0" class="d-block w-100">
+                    <div class="carousel-caption caption">
+                        <h4>The Dark Room 3.0</h4>
+                        <p><a href="theatre.html">Book Tickets</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="photos/shakespeare.jpg" alt="Twelfth Night" class="d-block w-100">
+                    <div class="carousel-caption caption">
+                        <h4>Twelfth Night, Shakespeare</h4>
+                        <p><a href="theatre.html">Book Tickets</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- page description  -->
+    <div class="container">
+        <h2 class="m-5">About Us!!</h2>
+        <p class="m-5" style="font-size: 1.2rem;">Do you always feel bored going to the same places again and again to
+            spend time with your loved ones?<br>
+            If yes, then let us help you to make your days lively. Stay updated about all the latest event happening all
+            over India.
+            Be it shopping, pottery sessions, art dates, food fest or trecking, we are here to guide you towards the
+            best events of your life!!</p>
+
+    </div>
+    <div ng-controller="CountdownCtrl">
+        <div class="container text-center bg-secondary bs ">
+            <br>
+            <h1 class="m-3">Hurry up!!</h1>
+            <img class="card-img-top m-3 item" src="photos/darshan.jpeg" style="height: 200px; width: 400;"
+                alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Darshan Raval</h4>
+                <p class="card-text">
+
+                    Date: 24April <br>
+                    Time: 7:00 pm <br>
+                    Price: 4000/- <br>
+
+                </p>
+
+
+                <button class="but text-right btn btn-dark"><a href="concert.html"
+                        style="text-decoration: none; color: white;">BOOK</a></button>
+                <p id="cd"></p>
+
+            </div>
+
+            <div class="row text-center">
+                <div class="col">
+                    <p style="font-size: 50px;" class="m-3">Days: {{ days }}</p>
+                </div>
+                <div class="col">
+                    <p style="font-size: 50px;" class="m-3">Hours: {{ hours }}</p>
+                </div>
+                <div class="col">
+                    <p style="font-size: 50px;" class="m-3">Minutes: {{ minutes }}</p>
+                </div>
+                <div class="col">
+                    <p style="font-size: 50px;" class="m-3">Seconds: {{ seconds }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        angular.module('countdownApp', [])
+            .controller('CountdownCtrl', function ($scope, $interval) {
+                // Target date and time (replace with your desired date and time)
+                var targetDate = new Date("2024-10-15 10:00:00");
+
+                // Function to calculate remaining time
+                function getTimeRemaining() {
+                    var now = new Date();
+                    var difference = targetDate - now;
+
+                    // Calculate days, hours, minutes, and seconds
+                    var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                    return {
+                        days: days,
+                        hours: hours,
+                        minutes: minutes,
+                        seconds: seconds
+                    };
+                }
+
+                // Update time every second
+                var updateTimer = function () {
+                    var time = getTimeRemaining();
+                    $scope.days = time.days;
+                    $scope.hours = time.hours;
+                    $scope.minutes = time.minutes;
+                    $scope.seconds = time.seconds;
+                };
+
+                $interval(updateTimer, 1000);
+
+                // Optional: Display message when timer reaches zero
+                if (targetDate < new Date()) {
+                    $scope.message = "Countdown finished!";
+                }
+            });
+
+    </script>
+
+    <!-- categories -->
+    <div class="container bg-secondary bs">
+        <h3 class="text-center">Choose you next Plan!!</h3>
+        <div class="categories">
+            <div class="d-flex flex-wrap flex-sm-shrink-1 ">
+                <div class="flex-item flex-fill p-5 text-bg-dark item">
+                    <a href="standup.html">
+                        <img src="photos/standup.jpg" alt="Stand-up" class="flex-img mx-auto d-block rounded">
+                    </a>
+                    <p class="text-center">STAND-UP</p>
+                </div>
+                <div class="flex-item flex-fill p-5 text-bg-dark item">
+                    <a href="concert.html">
+                        <img src="photos/concert.jpg" alt="concert" class="flex-img mx-auto d-block rounded">
+                    </a>
+                    <p class="text-center">CONCERTS</p>
+                </div>
+                <div class="flex-item flex-fill p-5 text-bg-dark item">
+                    <a href="foodfest.html">
+                        <img src="photos/foodfest.png" alt="foodfest" class="flex-img mx-auto d-block rounded">
+                    </a>
+                    <p class="text-center">FOODFEST</p>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap flex-*-shrink-1">
+                <div class="flex-item flex-fill p-5 text-bg-dark item">
+                    <a href="theatre.html">
+                        <img src="photos/theatre.png" alt="theatre" class="flex-img mx-auto d-block rounded">
+                    </a>
+                    <p class="text-center">THEATRE</p>
+                </div>
+                <div class="flex-item flex-fill p-5 text-bg-dark item">
+                    <a href="treks.html">
+                        <img src="photos/trek.png" alt="trek" class="flex-img mx-auto d-block rounded">
+                    </a>
+                    <p class="text-center">TREKS</p>
+                </div>
+                <div class="flex-item flex-fill p-5 text-bg-dark item">
+                    <a href="fun.html">
+                        <img src="photos/fun.png" alt="fun" class="flex-img mx-auto d-block rounded">
+                    </a>
+                    <p class="text-center">FUN</p>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap flex-*-shrink-1">
+                <div class="flex-item flex-fill p-5 text-bg-dark item">
+                    <a href="amusepark.html">
+                        <img src="photos/amusementpark.png" alt="amusementpark"
+                            class="flex-img mx-auto d-block rounded">
+                    </a>
+                    <p class="text-center">AMUSEMENT PARKS</p>
+                </div>
+                <div class="flex-item flex-fill p-5 text-bg-dark item">
+                    <a href="shopping.html">
+                        <img src="photos/shopping.png" alt="shopping" class="flex-img mx-auto d-block rounded">
+                    </a>
+                    <p class="text-center">SHOPPING</p>
+                </div>
+                <div class="flex-item flex-fill p-5 text-bg-dark item">
+                    <a href="hotels.html">
+                        <img src="photos/hotel.png" alt="hotel" class="flex-img mx-auto d-block rounded">
+                    </a>
+                    <p class="text-center">HOTELS</p>
+                </div>
+            </div>
+            <span><br><br> </span>
+
+
+        </div>
+
+
+    </div>
+
+    <!-- footer -->
+    <div id="footer"></div>
+</body>
+
+</html>
